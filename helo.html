@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceiling Repair Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1E2A4A; /* Dark blue background */
+            color: white;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: #f4f6fb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            font-size: 14px;
+        }
+
+        .top-bar div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-bar a {
+            color: #000080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .nav-bar a.active {
+            font-weight: bold;
+            color: #000080;
+        }
+
+        /* Main Content */
+        .contain {
+            display: flex;
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+        }
+
+        .left-sectione {
+            max-width: 50%;
+        }
+
+        .left-sectione h5 {
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #b0b3c6;
+        }
+
+        .left-sectione h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .left-sectione p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 37px;
+        }
+
+        /* Customer Review Card */
+        .review-card {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 35px 35px 120px 35px;
+            max-width: 370px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .review-card h4 {
+            font-size: 34px;
+            margin-bottom: 5px;
+           
+        }
+
+        .review-card p {
+            font-size: 14px;
+        }
+
+        .review-card .customer-name {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Right-side Image */
+        .right-section img {
+            max-width: 450px;
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .contain {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .left-sectione, .right-sectione {
+                max-width: 100%;
+            }
+
+            .right-sectione {
+                margin-top: 20px;
+            }
+        }
+        .image{
+    margin-top: -93px;
+    margin-left: 260px;
+
+}
+.big{
+    width:100px;
+    margin-top: -11px;
+}
+.box{
+    margin-top: 40px;
+}
+.helo{
+    width:  90px;
+    margin-top:40px;
+    margin-left:   20px;
+}
+.people{
+    color:  black   ;
+}
+.container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1600px;
+            background-color:white;
+             padding: 40px;
+        }
+        .left-section {
+            width: 50%;
+        }
+        .left-section h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .service-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .service-box img {
+            width: 130px;
+            margin-right: 15px;
+        }
+        
+        .right-sectione {
+            display:    flex    ;
+            width: 46%;
+    padding: 91px;
+    background: #f8f8f8;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-top: -1px;
+}
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            font-size: 15px;
+            font-weight: bold;
+            display: block;
+            margin-bottom:30px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #1E2A4A;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        h1{
+             font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .form-group{
+            color:  black   ;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div>
+            <span class="people">Sydney, NSW, 2000</span>
+            <span class="people">|</span>
+            <a href="mailto:saed7@hotmail.com">saed7@hotmail.com</a>
+            <span class="people">|</span>
+            <span class="people">0411 444 666</span>
+        </div>
+        <div class="social-icons">
+    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20"></a>
+    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" width="20"></a>
+</div>
+
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Testimonial</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <img class="helo" src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 025708.png">
+    <div class="contain">
+        <div class="left-sectione">
+            <h5  class="head">SYDNEY BEST CEILING REPAIR SERVICE</h5>
+            <h1>Looking For Professional Ceiling Service In Sydney, Australia?</h1>
+            <p class="box">Find Top-Tier Ceiling Services In Sydney, Australia For Expert Installation, Repair, And Maintenance. Trust Seasoned Professionals For Top-Quality Outcomes.</p>
+            
+            <div class="review-card">
+                <h4>Happy Customer</h4>
+                <p>Ben (our son who owns the unit) will be <br> paying you tomorrow. Thank you and your<br> painters for such a good job. Ben was <br>   thrilled with it as were we.</p>
+                <img class="image" src="C:\Users\swostika\Pictures\Screenshot 2025-03-22 010204.png">
+                <div class="customer-name">
+                    <img class="big" src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 021714.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <img src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 011030.png" alt="Ceiling Repair">
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-sectione">
+            <h1 style="color:blue;"class="form-groupS">How To Get Our Service</h1>
+            <div class="service-box">
+                <img src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 031801.png" alt="Choose Time">
+                <div>
+                    <h2 style="color:black;"class="form-groupS">Choose Your Time</h2>
+                    <p  style="color:black;"class="form-groupS">We Are Available 24/7 On Our Service.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 031817.png" alt="Experience">
+                <div>
+                    <h2 style="color:black;" class="form-groupS">Experience</h2>
+                    <p style="color:black;" class="form-groupS">Our Years Of Experience On Ceiling Repair.</p>
+                </div>
+            </div>
+            <div class="service-box">
+                <img src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 031838.png" alt="Team Arrives">
+                <div>
+                    <h2 style="color:black;" class="form-groupS">Our Team Arrives</h2>
+                    <p style="color:black;" class="form-groupS">We Are Available For 24/7 On Our Top-Notch Service.</p>
+                </div>
+            </div>
+             <img class="Team " src="C:\Users\swostika\Pictures\Screenshots\Screenshot 2025-03-22 050614.png ">  
+        </div>
+
+        
+        <div class="right-sectione">
+            <form>
+                <div class="form-group">
+                    <label class="form-groupS">Your Number</label>
+                    <input type="text" placeholder="Type here">
+                </div>
+                <div class="form-group">
+                    <label class="form-groupS">Your Email</label>
+                    <input type="email" placeholder="Type here">
+                </div>
+                <div class="form-group">
+                    <label class="form-groupS">Apartment Size</label>
+                    <select>
+                        <option class="form-groupS">1 Bedroom</option>
+                        <option class="form-groupS">2 Bedroom</option>
+                        <option class="form-groupS">3 Bedroom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-groupS">Is the unit VACANT or FURNISHED?</label>
+                    <select>
+                        <option class="form-groupS">VACANT</option>
+                        <option>FURNISHED</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-groupS">Does the bathroom ceiling contain vermiculite?</label>
+                    <select>
+                        <option class="form-groupS">YES</option>
+                        <option class="form-groupS">NO</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-groupS">Approximate Size of the Unit in Square Meters</label>
+                    <input type="text" placeholder="Type here">
+                </div>
+                <div class="form-group">
+                    <label class="form-groupS">Your Comments/ Questions</label>
+                    <textarea rows="3" placeholder="Type here"></textarea>
+                </div>
+                <button class="submit-btn">Get a Quote</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
